@@ -1,11 +1,19 @@
 package com.sparta.lck_news.dto;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 
-@Setter
 @Getter
+@NoArgsConstructor
 public class LoginRequestDto {
-    private String username;
-    private String password;
+
+  @NotBlank
+//  @Pattern()
+  private String username;
+
+  @NotBlank
+  //  @Pattern()
+  private String password;
 }
