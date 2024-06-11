@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class DeactivateRequestDto {
 
+  private int password;
+
+  private String gisdnr;
 
 
-
-
-
-  private String password;
+  private String pl;
 }
